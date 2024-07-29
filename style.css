@@ -1,22 +1,39 @@
 body {
-    background-color: yellow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
 }
 
+.section {
+    margin: 100px 300px;
+    width: 60%;
+}
+
 .container {
-    display: flex;
-    align-items: center;
+    text-align: center;
+    background-color: blanchedalmond;
+    border-radius: 25px;
+    box-shadow:5px 5px 5px 5px rgb(121, 171, 121);
+    padding: 60px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.row {
+    padding: 40px;
+}
+
+.row h1{
+    text-align: center;
+    color: crimson;
 }
 
 .list {
-    width: 50px;
-    height: 50px;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
-    margin: 0 10px;
+    margin: 20px;
+    padding: 30px;
     border: 2px solid #ccc;
     display: inline;
     justify-content: center;
@@ -29,8 +46,8 @@ body {
 }
 
 .list.completed {
-    background-color: #00FF00;
-    border-color: #00FF00;
+    background-color: green;
+    border-color: green;
 }
 
 .list i {
@@ -47,8 +64,6 @@ body {
 
 .buttons {
     margin-top: 20px;
-    display: flex;
-    justify-content: center;
 }
 
 .butt {
@@ -62,6 +77,19 @@ body {
     margin: 0 10px;
 }
 
-.butt.active {
-    background-color: #007bff;
+.butt:hover {
+    background-color: #aaa;
+}
+
+.butt.prev {
+    background-color:lightcoral;
+}
+
+.butt.prev:hover{
+    background-color:aqua;
+    color: black;
+}
+
+.butt.next {
+    background-color:rgb(142, 202, 39);
 }
