@@ -1,0 +1,67 @@
+body {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    border: 2px solid #ccc;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+.list.active {
+    background-color: #fff;
+    border-color: #000;
+}
+
+.list.completed {
+    background-color: #00FF00;
+    border-color: #00FF00;
+}
+
+.list i {
+    font-size: 24px;
+}
+
+.list.active i {
+    color: #000;
+}
+
+.list.completed i {
+    color: #fff;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.butt {
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #ccc;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.butt.active {
+    background-color: #007bff;
+}
