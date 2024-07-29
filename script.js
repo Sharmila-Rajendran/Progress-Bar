@@ -1,6 +1,6 @@
 const List = document.querySelectorAll(".list");
-const prevButton = document.querySelector(".butt.prev");
-const nextButton = document.querySelector(".butt.next");
+const Previous = document.querySelector(".butt.prev");
+const Next = document.querySelector(".butt.next");
 let current = 0;
 
 function Updation() {
@@ -19,7 +19,7 @@ function Updation() {
     console.log(`Current Index: ${current}`);
 }
 
-prevButton.addEventListener('click', () => {
+Previous.addEventListener('click', () => {
     console.log('Previous Button Clicked');
     if (current > 0) {
         current--;
@@ -27,7 +27,7 @@ prevButton.addEventListener('click', () => {
     }
 });
 
-nextButton.addEventListener('click', () => {
+Next.addEventListener('click', () => {
     console.log('Next Button Clicked');
     if (current <= List.length - 1) {
         current++;
